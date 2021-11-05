@@ -12,9 +12,9 @@ output:
 
 ## About Me
 
-I am a Data Analyst in the Nephrology Division at Columbia University Medical Center with a background in Epidemiology and Applied Biostatistics. I am also currently a part-time MA student in the Department of Biomedical Informatics.
+I am a Data Analyst in the Nephrology Division at Columbia University Medical Center with a background in Epidemiology and Applied Biostatistics. I am also currently a part-time MA student in the Department of Biomedical Informatics. More details on my academic and professional experience can be found on my [Experience Page](cv.html).
 
-I work with the Columbia University Renal Epidemiology (CURE) group performing observational research on kidney transplantation using national transplant registry data. My [research](https://orcid.org/0000-0002-7920-7615) interests include disparities in access to kidney transplantation and clinical decision support in organ allocation and organ offer acceptance.
+I work with the Columbia University Renal Epidemiology (CURE) group performing observational research on kidney transplantation using national transplant registry data. My [research](research.html) interests include disparities in access to kidney transplantation and clinical decision support in organ allocation and organ offer acceptance.
 
 
 

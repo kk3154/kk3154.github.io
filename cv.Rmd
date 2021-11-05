@@ -35,7 +35,7 @@ My analytic and programming experience includes working in Stata, R, Python, SAS
   - August 2014 - August 2016
   - Documented, investigated, and coded complaints and adverse events associated with peritoneal dialysis products to facilitate post-market regulatory reporting to the FDA
 
-
+[Back to home page](index.html)
 
 
 
