@@ -1,0 +1,42 @@
+---
+title: "Experience"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: spacelab
+  
+---
+
+I have 5 years of work experience in academia and the medical device industry.
+
+My analytic and programming experience includes working in Stata, R, Python, SAS, SQL, ArcGIS, QGIS, Scala, and Apache Spark.
+
+## Education
+
+* **MPH in Epidemiology** - Columbia University Mailman School of Public Health
+  - Graduated May 2018
+  - Certificate in Applied Biostatistics
+  - Published thesis available [here](https://cjasn.asnjournals.org/content/14/10/1500)
+
+* **MA in Biomedical Informatics** - Columbia University
+  - Expected May 2022
+  
+* **BS in Biology** - Emory University
+  - Graduated May 2014
+  - Certificate in Global Health, Culture, and Society
+
+## Professional Experience
+* **Data Analyst - Nephrology** - Columbia University Irving Medical Center, New York, NY
+  - August 2020 - Present
+  - Conducted observational epidemiology research on end stage kidney disease and kidney transplantation using national registry data
+  
+* **Product Surveillance Quality Associate** - Baxter International, Round Lake, IL
+  - August 2014 - August 2016
+  - Documented, investigated, and coded complaints and adverse events associated with peritoneal dialysis products to facilitate post-market regulatory reporting to the FDA
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+---
+title: "Kristen King, MPH"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: spacelab
+  
+---
+
+<img src="images/headshot.jpg" style="width:35%">
+
+## About Me
+
+I am a Data Analyst in the Nephrology Division at Columbia University Medical Center with a background in Epidemiology and Applied Biostatistics. I am also currently a part-time MA student in the Department of Biomedical Informatics.
+
+I work with the Columbia University Renal Epidemiology (CURE) group performing observational research on kidney transplantation using national transplant registry data. My [research](https://orcid.org/0000-0002-7920-7615) interests include disparities in access to kidney transplantation and clinical decision support in organ allocation and organ offer acceptance.
+
+
+
