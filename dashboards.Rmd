@@ -8,6 +8,67 @@ output:
   
 ---
 
-Here are some example dashboards created for the BIST P8105 - Data Science course.
+Here are some example plots in a flexdashboard created for the BIST P8105 - Data Science course.
 
 The data for these figures come from the New York City Department of Health and Mental Hygiene's Restaurant Inspection Results data.
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+Filtering only Manhattan restaurants from the dataset.
+
+```{r}
+man_df = rest_inspec %>% 
+  janitor::clean_names() %>% 
+  filter(boro == "MANHATTAN")
+```
+
+Creating a bar chart of the number of inspections where citations related to vermin, mice, or roaches were issued, by street.
+
+```{r}
+data("rest_inspec")
+
+man_df %>% 
+  filter(str_detect(violation_description, "[vV]ermin") |
+           str_detect(violation_description, "[mM]ice") | 
+           str_detect(violation_description, "[rR]oach")
+  ) %>% 
+  count(street) %>% 
+  mutate(street = fct_reorder(street, n)) %>% 
+  plot_ly(x = ~street, y = ~n, color = ~street, type = "bar", colors = "viridis")
+```
+
+Creating a boxplot of the distribution of scores by street (excluding avenues), where a higher score indicates a worse inspection.
+
+```{r}
+man_df %>% 
+  filter(str_detect(violation_description, "[vV]ermin") |
+           str_detect(violation_description, "[mM]ice") | 
+           str_detect(violation_description, "[rR]oach")
+  ) %>% 
+  filter(!str_detect(street, "AVENUE")) %>% 
+  filter(!str_detect(street, "AVE")) %>% 
+  mutate(street = fct_reorder(street, score)) %>% 
+  plot_ly(y = ~score, color = ~street, type = "box", colors = "viridis")
+```
+
+Creating a plot to show the distribution of grades by cuisine type among Manhattan restaurants.
+
+```{r}
+man_df %>% 
+  filter(! is.na(grade)) %>%
+  filter(grade %in% c("A", "B", "C")) %>% 
+  group_by(cuisine_description, grade) %>% 
+  summarize(freq = n()) %>% 
+  group_by(cuisine_description) %>% 
+  mutate(pct = freq/sum(freq)*100) %>% 
+  pivot_wider(
+    
+  )
+
+
+```
+
