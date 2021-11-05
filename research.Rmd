@@ -4,8 +4,6 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: spacelab
-  
 ---
 
 My research focuses on kidney transplantation. I have over 33 peer-reviewed publications in medical journals and have given 2 oral presentations and 2 poster presentations at national conferences as of November 2021.

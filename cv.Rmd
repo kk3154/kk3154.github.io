@@ -4,8 +4,6 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: spacelab
-  
 ---
 
 I have 5 years of work experience in academia and the medical device industry.
