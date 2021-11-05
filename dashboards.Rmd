@@ -1,0 +1,13 @@
+---
+title: "Dashboard"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: spacelab
+  
+---
+
+Here are some example dashboards created for the BIST P8105 - Data Science course.
+
+The data for these figures come from the New York City Department of Health and Mental Hygiene's Restaurant Inspection Results data.
