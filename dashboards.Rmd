@@ -57,6 +57,8 @@ man_df %>%
 
 Creating a plot to show the distribution of grades by cuisine type among Manhattan restaurants.
 
+Horizontal Stacked Bar Chart:
+
 ```{r}
 man_df %>% 
   filter(! is.na(grade)) %>%
@@ -65,10 +67,16 @@ man_df %>%
   summarize(freq = n()) %>% 
   group_by(cuisine_description) %>% 
   mutate(pct = freq/sum(freq)*100) %>% 
+  select(-freq) %>% 
   pivot_wider(
+    names_from = "grade",
+    values_from = "pct"
+  ) %>% 
+  mutate_all(~replace(., is.na(.), 0)) %>% 
+  plot_ly(x = ~A, y = ~cuisine_description, type = "bar", orientation = "h",name = "Grades (Percent)") %>% 
+  add_trace(x = ~B, name = "B") %>% 
+  add_trace(x = ~C, name = "C") %>% 
+  layout(yaxis = list(title = "Cuisines"),
+         barmode = "stack")
     
-  )
-
-
-```
-
+    
