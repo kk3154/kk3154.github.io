@@ -3,7 +3,7 @@ title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: row
-    vertical_layout: fill
+    vertical_layout: scroll
 ---
 
 ```{r setup, include=FALSE}
