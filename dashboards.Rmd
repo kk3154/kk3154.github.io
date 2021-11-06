@@ -3,7 +3,7 @@ title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: row
-    vertical_layout: scroll
+    vertical_layout: fill
 ---
 
 ```{r setup, include=FALSE}
@@ -23,6 +23,8 @@ man_df = rest_inspec %>%
 ```
 
 ---
+Row
+--------------------------------------------------------------------------
 
 Here are some example plots in a flexdashboard created for the BIST P8105 - Data Science course.
 
