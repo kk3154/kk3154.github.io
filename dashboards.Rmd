@@ -2,7 +2,7 @@
 title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: row
+    orientation: column
     vertical_layout: scroll
 ---
 
