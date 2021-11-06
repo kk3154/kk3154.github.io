@@ -12,11 +12,6 @@ library(p8105.datasets)
 library(plotly)
 ```
   
----
-
-Here are some example plots in a flexdashboard created for the BIST P8105 - Data Science course.
-
-Bar chart showing number of inspections among Manhattan restaurants where citations were issued related to vermin, mice, or roaches, by street. The data for these figures come from the New York City Department of Health and Mental Hygiene's Restaurant Inspection Results data.
 
 ```{r}
 data("rest_inspec")
@@ -24,7 +19,15 @@ data("rest_inspec")
 man_df = rest_inspec %>% 
   janitor::clean_names() %>% 
   filter(boro == "MANHATTAN")
+```
 
+---
+
+Here are some example plots in a flexdashboard created for the BIST P8105 - Data Science course.
+
+Bar chart showing number of inspections among Manhattan restaurants where citations were issued related to vermin, mice, or roaches, by street. The data for these figures come from the New York City Department of Health and Mental Hygiene's Restaurant Inspection Results data.
+
+```{r}
 man_df %>% 
   filter(str_detect(violation_description, "[vV]ermin") |
            str_detect(violation_description, "[mM]ice") | 
