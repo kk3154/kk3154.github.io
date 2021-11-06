@@ -71,3 +71,8 @@ man_df %>%
   layout(yaxis = list(title = "Cuisines"),
          barmode = "stack")
 ```
+
+```{r, eval=FALSE}
+rmarkdown::render("dashboards.Rmd", output_format = "flexdashboard::flex_dashboard")
+```
+
