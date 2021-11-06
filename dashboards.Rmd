@@ -75,7 +75,4 @@ man_df %>%
          barmode = "stack")
 ```
 
-```{r, eval=FALSE}
-rmarkdown::render("dashboards.Rmd", output_format = "flexdashboard::flex_dashboard")
-```
 
