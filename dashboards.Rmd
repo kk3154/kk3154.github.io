@@ -26,6 +26,8 @@ man_df = rest_inspec %>%
 
 Here are some example plots in a flexdashboard created for the BIST P8105 - Data Science course.
 
+### 1
+
 Bar chart showing number of inspections among Manhattan restaurants where citations were issued related to vermin, mice, or roaches, by street. The data for these figures come from the New York City Department of Health and Mental Hygiene's Restaurant Inspection Results data.
 
 ```{r}
@@ -38,6 +40,8 @@ man_df %>%
   mutate(street = fct_reorder(street, n)) %>% 
   plot_ly(x = ~street, y = ~n, color = ~street, type = "bar", colors = "viridis")
 ```
+
+### 2
 
 Boxplot of the distribution of scores by street (excluding avenues), where a higher score indicates a worse inspection.
 
@@ -52,6 +56,8 @@ man_df %>%
   mutate(street = fct_reorder(street, score)) %>% 
   plot_ly(y = ~score, color = ~street, type = "box", colors = "viridis")
 ```
+
+### 3
 
 Horizontal Stacked Bar Chart showing the distribution of grades by cuisine type among Manhattan restaurants.
 
